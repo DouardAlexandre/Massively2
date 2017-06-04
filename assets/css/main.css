@@ -2,46 +2,59 @@
 
 
 body {
-    background-image: url(../images/bg.jpg);             
-    background-size: cover;
-    text-align: center;
-
+ 
+  background: url(../images/bg.jpg)  no-repeat fixed; /* pour ajuster l'image car decalage pour taille de container */
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */         
+  text-align: center;
 }
 
  .h1Header{
 
-    font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 	font-size: 85px;
 	font-weight: 900;
 	color: #ffffff;
 }
+
 .h2ArticleMain{
 
-    font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 	font-size: 75px;
 	font-weight: 900;
-	color: #000000;
+	
 }
 
 .pArticleMain{
+
 	font-family:'Merriweather', serif;
 	font-weight: 300;
 	font-size: 18px;
-	line-height: 45px;
-    
+	line-height: 45px;    
 }
 
 .pHeader{
+
 	font-family:'Merriweather', serif;
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 45px;
-    color: #ffffff;
+  color: #ffffff;
 }
+
+.date:before{
+
+
+}
+
+a:link 
+{ 
+ text-decoration:none;
  
-
-
+} 
+ 
   h1, h2, h3, h4, h5, h6 {
+
     font-family: "Source Sans Pro",Helvetica,sans-serif;
     font-weight: 900;
     letter-spacing: 0.075em;
@@ -50,26 +63,59 @@ body {
     text-transform: uppercase;
   }
 
-.container{
+.col-lg-12{
+    padding-right: 150px;
+    padding-left: 150px;
     background-color: #ffffff; 
 }
 
 .header{
+
     width:100%;
     display:flex;
     align-items: center;
     justify-content: center;
-	height:500px;
-	margin-bottom: 200px;
+	  height:500px;
+	  margin-bottom: 100px; 
+    margin-top: 200px;  
+}
+
+
+
+.container{
+    padding-left: 0px;
+    padding-right: 0px;  
+    overflow:hidden;
+    background-color: #ffffff; 
+    
+}
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;  
+    margin-bottom: 0px;
     
 }
 
 
-/*    Logo (cercle blanc fin + fleche)  + hover */
+.navbar {
+    
+    border-radius: 0px;
+    background-color: #a8c3cb; 
+    padding-left: 0px;
+    padding-right: 0px;  
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+/*Glyphicone (cercle blanc fin + fleche_bas)  + hover */
 
 .fa-circle-thin{
 	
-   color: transparent; 
+  color: transparent; 
 }
 
 .fa-arrow-down{
@@ -101,7 +147,7 @@ body {
 
 
 
-/* pour les bottom */
+/* POUR LES BOTTOM */
 .actions{
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -118,17 +164,19 @@ body {
 }
 
 
-/* pour les post */
+/* POUR LES POST */
 
 .post{
   border-style: solid;
   border-width: 1px;
-  border-color: #A9A9A9;
-  padding: 4rem;
+  border-color: #d8d8d8;
+  padding: 4rem
+
 }
 
 .post header,   .post p{
   text-align: center;
+
 }
 
 /* POUR LE ZOOM DES IMAGES */
@@ -161,3 +209,12 @@ body {
    margin: 0 !important;
 }
 
+/* POUR LE FORMULAIRE DE CONTACT */
+
+.footer{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #A9A9A9;
+  padding: 4rem;
+  background-color: #F2F2F2;
+}
