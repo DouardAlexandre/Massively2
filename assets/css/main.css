@@ -81,33 +81,31 @@ a:link
 }
 
 
+.fond_blanc{
+  background-color: #ffffff; 
+}
 
 .container{
     padding-left: 0px;
     padding-right: 0px;  
     overflow:hidden;
-    background-color: #ffffff; 
-    
-}
-
-.container-fluid{
-    padding-left: 0px;
-    padding-right: 0px;  
-    margin-bottom: 0px;
-    
+      
 }
 
 
 .navbar {
-    
+
+    background: rgba(0,0,0,0.2);
     border-radius: 0px;
-    background-color: #a8c3cb; 
-    padding-left: 0px;
-    padding-right: 0px;  
     margin-bottom: 0px;
-    display: flex;
-    align-items: center;
-    
+    margin-bottom: 0px;
+    border: none;
+}
+
+
+.active{
+  
+   background-color: #ffffff; 
 }
 
 
