@@ -14,7 +14,9 @@ body {
 	font-size: 85px;
 	font-weight: 900;
 	color: #ffffff;
+  line-height: 80px;    
 }
+
 
 .h2ArticleMain{
 
@@ -42,7 +44,28 @@ body {
 }
 
 .tab-content header {
+
    margin-top:80px;
+}
+
+p.greyborder{
+   box-shadow:0 16px 2px 0 #fff inset, 0 17px 0 0 #d8d8d8 inset;
+   justify-content: center;
+   height: 40px;
+   margin-left:150px;
+   margin-right:150px;
+   margin-bottom: 0px;
+   padding-bottom: 80px;
+   
+}
+
+article p span.pArticleMain {
+
+   background-color: #ffffff;
+   padding-left:40px;
+   padding-right:40px;
+   line-height: 32px;
+   
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -78,8 +101,8 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
 	  height:500px;
-	  margin-bottom: 100px; 
-    margin-top: 200px;  
+	  margin-bottom: 30px; 
+    margin-top: 300px;  
 }
 
 
@@ -107,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .fa-circle-thin::before{
 
-  box-sizing: border-box;
+    box-sizing: border-box;
     display: inline-block;
     width:1em;
     height:1em;
@@ -121,7 +144,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fa-stack:hover .fa-arrow-down{
-  color: #18bfef; 
+ color: #18bfef; 
+ text-decoration: none;
+ -o-transition:.5s;
+ -ms-transition:.5s;
+ -moz-transition:.5s;
+ -webkit-transition:.5s;
+ transition:.5s;
 }
  
 .fa-stack:hover .fa-circle-thin:before{
@@ -179,7 +208,7 @@ a{
 }  
 
 button.button.action-button {  
- border-width: 3px;
+ border-width:2px;
 }        
 
 .active{
@@ -204,9 +233,34 @@ button.button.action-button {
 .navbar-nav.onglets li.onglet_generic a,.navbar-nav.onglets li.onglet_elements a,.navbar-nav.pull-right li a{
   color:#ffffff;
   background-color: transparent;
-}    
+} 
 
+ul.pagination li a {
+  color: #000000;
+  font-weight: 600;
+  font-size: 12px;
+  border-width: 1.5px;
+  border-radius: 0px;
+}
 
+* {
+  border-radius: 0 !important;
+}
+
+ul.pagination li a:hover {
+  color : #18bfef ;
+  background-color:#ffffff;
+  border-color : #18bfef ;
+}
+
+.pagination>li:first-child>a{
+  background-color: #d8d8d8;
+}
+  
+.pagination{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 
 /* POUR LES BOTTOM */
 
@@ -281,6 +335,7 @@ section.footerigth{
 section.post{
   height: 100%;
   line-height: 35px;
+  border-top: none;
 }
 
 .form-control {
@@ -295,6 +350,7 @@ section.post{
   border-color: #A9A9A9;
   padding: 4rem;
   background-color: #F2F2F2;
+  border-top: none;
 }
 
 .footerigth{
@@ -304,6 +360,7 @@ section.post{
   border-color: #d8d8d8;
   padding: 4rem;
   text-align: left;
+  border-top: none;
 }
 
  .row {
